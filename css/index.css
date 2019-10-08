@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "archia";
+  src: url("fonts/archia-regular-webfont.woff2") format("woff2"), url("fonts/archia-regular-webfont-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.margin-t-20 {
+  margin-top: 200px;
+}
+
+.margin-t-10 {
+  margin-top: 100px;
+}
+
+.margin-t-5 {
+  margin-top: 50px;
+}
+
+.sm-2 {
+  max-width: 50%;
+  padding: 20px;
+}
+
+.sm-3 {
+  max-width: 33%;
+  padding: 20px;
+}
+
+.sm-4 {
+  max-width: 25%;
+  padding: 20px;
+}
+
+body {
+  font-family: "archia";
+  font-size: 1em;
+  line-height: 1.5;
+  color: #444;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  color: white;
+  background: #ff7878;
+}
+
+::selection {
+  color: white;
+  background: #ff7878;
+}
+
+a::-moz-selection {
+  color: #333333;
+}
+
+a::selection {
+  color: #333333;
+}
+
+.scroll-down {
+  height: 180px;
+  border-color: #0e162d;
+  margin-top: 60px;
+  width: 1px;
+  border: none;
+  border-left: 1px solid;
+}
+
+.projects--title {
+  padding: 15vh 10vw 0vh;
+  margin-top: 40px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  font-family: "DM Serif Display", serif;
+  color: #333333;
+  font-weight: 600;
+}
+
+.project-list-title {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.project-list-title h3 {
+  margin: 5px 0px;
+}
+
+.project-list-title h3 a {
+  color: #333333;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-list-title h3 a:hover {
+  color: #ffdede;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer {
+  padding: 30px 0px 20px 30px;
+}
+
+.tags {
+  font-style: italic;
+  display: block;
+  color: #a9a9a9;
+  font-weight: 300;
+  font-size: 0.8em;
+  font-family: "archia";
+}
+
+.heading-3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+.heading-4 {
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.link-styled {
+  color: #ffdede;
+  display: block;
+  margin: 10px 0;
+}
+
+.link-styled:hover {
+  color: #ff7878;
+}
+
+.answer {
+  color: #a9a9a9;
+}
+
+.link-inline-styled {
+  color: #333333;
+  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
+          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.link-inline-styled:hover {
+  background-color: rgba(254, 231, 231, 0.7);
+  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
+          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.logo img {
+  width: 120px;
+}
+
+header {
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.header-links a,
+.footer-links a,
+.mobile-nav a {
+  color: #333333;
+  text-transform: uppercase;
+  font-family: "archia";
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-links a:hover,
+.footer-links a:hover,
+.mobile-nav a:hover {
+  color: #ffdede;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-links a.active,
+.footer-links a.active,
+.mobile-nav a.active {
+  color: #ff9c9c;
+  cursor: default;
+}
+
+.background-homepage {
+  background: #FAFAFA;
+}
+
+.intro-container {
+  max-width: 780px;
+  padding: 20vh 20vw 5vh 20vw;
+}
+
+.intro-container a {
+  color: #333333;
+  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
+          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.intro-container a:hover {
+  background-color: rgba(254, 231, 231, 0.7);
+  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
+          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.intro-title {
+  position: relative;
+  max-width: 300px;
+}
+
+.intro-title a {
+  font-size: 2.6em;
+  font-weight: 600;
+  font-family: "DM Serif Display", serif;
+}
+
+.intro-title img {
+  opacity: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 325px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 165px;
+}
+
+.intro-title:hover img {
+  opacity: 1;
+}
+
+.intro-text p {
+  font-size: 2em;
+  font-family: "archia";
+}
+
+.intro-text span {
+  cursor: help;
+}
+
+.intro-projects-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0px 100px;
+}
+
+.intro-projects-container a {
+  color: #333333;
+}
+
+.intro-projects-container img {
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.intro-projects-container img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.project-footer .visible-small {
+  display: none;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15vh 10vw;
+}
+
+.about-text {
+  text-align: left;
+  color: #444;
+  margin-left: 100px;
+  padding: 0px;
+}
+
+.about-text h2 {
+  margin-top: 0px;
+  font-size: 2.3em;
+  font-weight: 600;
+  font-family: "DM Serif Display", serif;
+  color: #333333;
+}
+
+.about-text span {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.about-contact {
+  margin-left: 100px;
+}
+
+.about-contact img {
+  max-width: 250px;
+}
+
+.about-contact .about-text {
+  margin-left: initial;
+}
+/*# sourceMappingURL=index.css.map */
