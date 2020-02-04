@@ -358,11 +358,13 @@ header {
 }
 
 
-.blog-design{
+.blog-design-header{
+  background-color: #a53f2b;
+  color:#ffa69e;
 
 }
 
-.blog-design-link{
-  color: 
+.blog-design-words{
+  color: #ffff;
 }
 /*# sourceMappingURL=index.css.map */
