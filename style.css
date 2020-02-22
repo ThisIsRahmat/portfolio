@@ -1,0 +1,126 @@
+/* --------------------- GENERAL ----------------- */
+
+@font-face {
+    font-family: Cantarell Bold;
+    src: url(cantarell-bold.ttf);
+}
+
+@font-face {
+    font-family: Cantarell Regular;
+    src: url(cantarell-regular.ttf);
+}
+
+
+body {
+	font-family: Cantarell Regular, sans-serif;
+	font-size: 18 px;
+	line-height: 1.5;
+	
+	background-color: #52414c;
+/* 	color: #885053; */
+/* 	margin: 40px auto 40px auto;
+	width: 620px; */
+}
+
+
+
+/* --------------------- NAVIGATION ----------------- */
+
+nav {
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+  position: fixed;
+  display: flex;
+  width: calc(100vh - 130px);
+  padding-left: 65px;
+  left: 56px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+nav div {
+  display: flex;
+}
+
+/* logo {
+  padding-right: 95px;
+}
+ 
+about {
+	padding-left: 20px;
+} */
+
+
+/* --------------------- SCROLL MARQUEE ----------------- */
+
+a.banner{
+  color
+} 
+
+.marquee {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  /* each letter will be 5% of the viewport width (vw) */
+  font-size: 5vw;
+  line-height: 1;
+  /* this will stop the long text from causing scroll bars by hanging
+  outside of the marquee box area */
+  overflow: hidden;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4500vw);
+  }
+}
+
+.marquee span {
+  /* this is the shorthand (brief) version of the animation css rule */
+  animation: moveLeft 250s infinite;
+  /* this will ensure the text stays all on the same line*/
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block*/
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
+}
+
+/* --------------------- About Me Text ----------------- */
+
+h4 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+section .aboutme {
+	width: 68.75%;
+	margin:0 6.25% 0 0;
+	padding:12.5% 6.25% 26.25% 6.25%;
+	display: inline-block;	
+	top: 0;
+}
+.aboutme p{
+	font-family: "regular";
+	font-size: 3.5vw;
+	line-height: 4.5vw;
+	color: #c5a57a;
+}
+
+.aboutme p span{
+	font-size: 18vw;
+	color: #d6be9d;
+}
+
+.aboutme p .exposant {
+	position: relative;
+	bottom: 1px;
+	font-size: .8em;
+	line-height: .8em;
+	vertical-align:auto;
+	text-decoration:none;
+}
