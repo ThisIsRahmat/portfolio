@@ -1,370 +1,126 @@
+/* --------------------- GENERAL ----------------- */
+
 @font-face {
-  font-family: "archia";
-  src: url("fonts/archia-regular-webfont.woff2") format("woff2"), url("fonts/archia-regular-webfont-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: Cantarell Bold;
+    src: url(cantarell-bold.ttf);
 }
 
-.margin-t-20 {
-  margin-top: 200px;
+@font-face {
+    font-family: Cantarell Regular;
+    src: url(cantarell-regular.ttf);
 }
 
-.margin-t-10 {
-  margin-top: 100px;
-}
-
-.margin-t-5 {
-  margin-top: 50px;
-}
-
-.sm-2 {
-  max-width: 50%;
-  padding: 20px;
-}
-
-.sm-3 {
-  max-width: 33%;
-  padding: 20px;
-}
-
-.sm-4 {
-  max-width: 25%;
-  padding: 20px;
-}
 
 body {
-  font-family: "archia";
-  font-size: 1em;
-  line-height: 1.5;
-  color: #444;
-  margin: 0px;
+	font-family: Cantarell Regular, sans-serif;
+	font-size: 18 px;
+	line-height: 1.5;
+	
+	background-color: #52414c;
+/* 	color: #885053; */
+/* 	margin: 40px auto 40px auto;
+	width: 620px; */
 }
 
-a {
-  text-decoration: none;
-}
 
-::-moz-selection {
-  color: white;
-  background: #ff7878;
-}
 
-::selection {
-  color: white;
-  background: #ff7878;
-}
+/* --------------------- NAVIGATION ----------------- */
 
-a::-moz-selection {
-  color: #333333;
-}
-
-a::selection {
-  color: #333333;
-}
-
-.scroll-down {
-  height: 180px;
-  border-color: #0e162d;
-  margin-top: 60px;
-  width: 1px;
-  border: none;
-  border-left: 1px solid;
-}
-
-.projects--title {
-  padding: 15vh 10vw 0vh;
-  margin-top: 40px;
-}
-
-.page-title {
-  text-align: center;
-  font-size: 2em;
-  font-family: "DM Serif Display", serif;
-  color: #333333;
-  font-weight: 600;
-}
-
-.project-list-title {
-  text-align: center;
-  padding-left: 20px;
-}
-
-.project-list-title h3 {
-  margin: 5px 0px;
-}
-
-.project-list-title h3 a {
-  color: #333333;
-  font-weight: 600;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.project-list-title h3 a:hover {
-  color: #ffdede;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer {
-  padding: 30px 0px 20px 30px;
-}
-
-.tags {
-  font-style: italic;
-  display: block;
-  color: #a9a9a9;
-  font-weight: 300;
-  font-size: 0.8em;
-  font-family: "archia";
-}
-
-.heading-3 {
-  font-family: "DM Serif Display", serif;
-  font-size: 1.5em;
-  margin-bottom: 0px;
-}
-
-.heading-4 {
-  font-family: "DM Serif Display", serif;
-  font-size: 2em;
-  margin-bottom: 0px;
-}
-
-.link-styled {
-  color: #ffdede;
-  display: block;
-  margin: 10px 0;
-}
-
-.link-styled:hover {
-  color: #ff7878;
-}
-
-.answer {
-  color: #a9a9a9;
-}
-
-.link-inline-styled {
-  color: #333333;
-  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
-          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.link-inline-styled:hover {
-  background-color: rgba(254, 231, 231, 0.7);
-  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
-          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.mobile-nav {
-  display: none;
-}
-
-.logo img {
-  width: 120px;
-}
-
-header {
-  height: 65px;
+nav {
+  transform-origin: bottom right;
+  transform: rotate(90deg);
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  -webkit-box-shadow: initial;
-          box-shadow: initial;
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto;
-  padding: 25px;
+  width: calc(100vh - 130px);
+  padding-left: 65px;
+  left: 56px;
+  justify-content: space-between;
+  white-space: nowrap;
 }
 
-.header-links a,
-.footer-links a,
-.mobile-nav a {
-  color: #333333;
-  text-transform: uppercase;
-  font-family: "archia";
-  font-size: 0.8em;
-  font-weight: 600;
-  margin: 15px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+nav div {
+  display: flex;
 }
 
-.header-links a:hover,
-.footer-links a:hover,
-.mobile-nav a:hover {
-  color: #ffdede;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+/* logo {
+  padding-right: 95px;
 }
+ 
+about {
+	padding-left: 20px;
+} */
 
-.header-links a.active,
-.footer-links a.active,
-.mobile-nav a.active {
-  color: #ff9c9c;
-  cursor: default;
-}
 
-.background-homepage {
-  background: #FAFAFA;
-}
+/* --------------------- SCROLL MARQUEE ----------------- */
 
-.intro-container {
-  max-width: 780px;
-  padding: 20vh 20vw 5vh 20vw;
-}
+a.banner{
+  color
+} 
 
-.intro-container a {
-  color: #333333;
-  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
-          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0.7);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.intro-container a:hover {
-  background-color: rgba(254, 231, 231, 0.7);
-  -webkit-box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
-          box-shadow: inset 0 -12px 0 rgba(254, 231, 231, 0);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.intro-title {
-  position: relative;
-  max-width: 300px;
-}
-
-.intro-title a {
-  font-size: 2.6em;
-  font-weight: 600;
-  font-family: "DM Serif Display", serif;
-}
-
-.intro-title img {
-  opacity: 0;
+.marquee {
   position: absolute;
-  bottom: 5px;
-  left: 325px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 165px;
-}
-
-.intro-title:hover img {
-  opacity: 1;
-}
-
-.intro-text p {
-  font-size: 2em;
-  font-family: "archia";
-}
-
-.intro-text span {
-  cursor: help;
-}
-
-.intro-projects-container {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 50px 0px 100px;
-}
-
-.intro-projects-container a {
-  color: #333333;
-}
-
-.intro-projects-container img {
+  top: 3vh;
+  left: 0;
   width: 100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  /* each letter will be 5% of the viewport width (vw) */
+  font-size: 5vw;
+  line-height: 1;
+  /* this will stop the long text from causing scroll bars by hanging
+  outside of the marquee box area */
+  overflow: hidden;
 }
 
-.intro-projects-container img:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4500vw);
+  }
 }
 
-.project-footer .visible-small {
-  display: none;
+.marquee span {
+  /* this is the shorthand (brief) version of the animation css rule */
+  animation: moveLeft 250s infinite;
+  /* this will ensure the text stays all on the same line*/
+  white-space: nowrap;
+  /* our span is inline by default, so here we tell it to be block*/
+  display: block;
+  /* this will let us add our animation */
+  position: relative;
 }
 
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15vh 10vw;
+/* --------------------- About Me Text ----------------- */
+
+h4 {
+	font-size: 24px;
+	font-weight: 700;
 }
 
-.about-text {
-  text-align: left;
-  color: #444;
-  margin-left: 100px;
-  padding: 0px;
+section .aboutme {
+	width: 68.75%;
+	margin:0 6.25% 0 0;
+	padding:12.5% 6.25% 26.25% 6.25%;
+	display: inline-block;	
+	top: 0;
+}
+.aboutme p{
+	font-family: "regular";
+	font-size: 3.5vw;
+	line-height: 4.5vw;
+	color: #c5a57a;
 }
 
-.about-text h2 {
-  margin-top: 0px;
-  font-size: 2.3em;
-  font-weight: 600;
-  font-family: "DM Serif Display", serif;
-  color: #333333;
+.aboutme p span{
+	font-size: 18vw;
+	color: #d6be9d;
 }
 
-.about-text span {
-  font-style: italic;
-  font-size: 0.8em;
+.aboutme p .exposant {
+	position: relative;
+	bottom: 1px;
+	font-size: .8em;
+	line-height: .8em;
+	vertical-align:auto;
+	text-decoration:none;
 }
-
-.about-contact {
-  margin-left: 100px;
-}
-
-.about-contact img {
-  max-width: 250px;
-}
-
-.about-contact .about-text {
-  margin-left: initial;
-}
-
-
-.blog-design-header{
-  background-color: #a53f2b;
-  color:#ffa69e;
-
-}
-
-.blog-design-words{
-  color: #ffff;
-}
-/*# sourceMappingURL=index.css.map */
